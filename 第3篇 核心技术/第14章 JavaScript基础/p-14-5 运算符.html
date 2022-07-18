@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+</head>
+<body>
+
+<form method="post" action="#">
+	<input type="button" value="算数运算" onclick="helloWorld()">
+</form>
+
+<script>
+    var president = 'henan';
+    var pi = 3.1415926;
+    var visited = false;
+
+    document.write('president: ', president, '<p>', 'pi: ', pi, '<p>', 'visited: ', visited);
+    document.write("<br />");
+
+    var a = 1;
+    a++;
+    document.write(a);
+    document.write("<br />");
+
+    a--;
+    document.write(a);
+    document.write("<br />");
+
+    var b = a++;
+    document.write(b);
+
+    function helloWorld() {
+        document.write('Hello, World!');
+
+    }
+
+    var a = 15;
+
+    document.write(a < 15);
+    document.write("<br />");
+
+    document.write(a > 15);
+    document.write("<br />");
+
+    document.write(a == 15);
+    document.write("<br />");
+
+    document.write(a <= 15);
+    document.write("<br />");
+
+    document.write(a >= 15);
+    document.write("<br />");
+
+    document.write("<br />");
+
+    var param = 15;
+
+    var test1 = (param == 15);
+    var test2 = (param = 15);
+
+    document.write(test1);
+    document.write("<br />");
+    document.write(typeof test1);
+    document.write("<br />");
+
+    document.write(test2);
+    document.write("<br />");
+    document.write(typeof test2);
+    document.write("<br />");
+
+    document.write("<br />");
+
+    var score = 350;
+    document.write(score);
+    document.write("<br />");
+
+    var test1 = ((score > 400) && (score <= 500));
+    document.write(test1);
+    document.write("<br />");
+
+    var test2 = ((score > 400) || (score == 500));
+    document.write(test2);
+    document.write("<br />");
+    document.write("<br />");
+
+    var a = false, b = !a;
+
+    document.write(a);
+
+    document.write("<br />");
+
+    document.write(b);
+
+    document.write("<br />");
+    document.write("<br />");
+
+    var x = 23;
+    var y = (x < 10 ? x : -x);
+
+    document.write(y);
+
+    document.write("<br />");
+    document.write("<br />");
+
+    var a = 10, b = 20;
+    var x = a == b ? 1 : 10;
+
+    document.write(x);
+    document.write("<br />");
+    document.write("<br />");
+
+    var param = "好好学习，天天向上！";
+    document.write(param);
+    document.write("<br />");
+
+    param += '----金轩阁';
+    document.write(param);
+    document.write("<br />");
+    document.write("<br />");
+
+    // 位运算符
+    document.write(41 & 23);
+    document.write("<br />");
+
+    document.write(41 | 23);
+    document.write('<br/>');
+
+    document.write(41 ^ 23);
+    document.write("<br />");
+
+    document.write(~41);
+    document.write("<br />");
+    document.write("<br />");
+
+    var a = 34;
+
+    var b, c, d;
+
+    a = (b = 17, c = 28, d = 45);
+
+    document.write(a);
+    document.write("<br />");
+
+    document.write(b);
+    document.write("<br />");
+
+    document.write(c);
+    document.write("<br />");
+
+    document.write(d);
+    document.write("<br />");
+    document.write("<br />");
+
+    var a = 34;
+    document.write(a);
+    document.write("<br />");
+    document.write("<br />");
+
+
+    var b, c, d;
+    a = void (b = 17, c = 28, d = 45)
+    document.write(b == 17, ' ', c == 28, ' ', d == 45);
+    document.write("<br />");
+
+    document.write(a);
+    document.write("<br />");
+
+    document.write("<br />");
+
+    var x = 3, y = null, sex = 'boy', a = undefined;
+    document.write(typeof a);
+    document.write("<br />");
+
+    document.write(typeof x);
+    document.write("<br />");
+
+    document.write(typeof y);
+    document.write("<br />");
+
+    document.write(typeof sex);
+    document.write("<br />");
+
+    document.write(typeof document.write('hello, world  '));
+    document.write("<br />");
+    document.write("<br />");
+
+
+</script>
+</body>
+</html>

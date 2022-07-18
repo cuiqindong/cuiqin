@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>循环语句</title>
+
+</head>
+<body>
+
+<button onclick="myWhile()">我的while</button>
+<p id="myWhile"></p>
+
+<button onclick="myDoWhile()">我的doWhile</button>
+<p id="myDoWhile"></p>
+
+<button onclick="myFor()">我的for</button>
+<p id="myFor"></p>
+
+<button onclick="myContinue()">我的continue</button>
+<p id="myContinue"></p>
+
+<script>
+
+    function myWhile() {
+        var x = "", i = 0;
+        while (i < 5) {
+            x = x + "该数字为" + i + "<br/>";
+            i++;
+        }
+        document.getElementById("myWhile").innerHTML = x;
+    }
+
+    function myDoWhile() {
+        var x = '', i = 0;
+        do {
+            x = x + "该数字为" + i + "<br/>";
+            i++;
+        }
+        while (i < 5)
+        document.getElementById('myDoWhile').innerHTML = x;
+    }
+
+    function myFor() {
+        for (var i = 0, iSum = 0; i <= 100; i++) {
+            iSum += i;
+        }
+        document.getElementById('myFor').innerHTML = iSum;
+    }
+
+    function myContinue() {
+        var output = '';
+        for (var x = 1; x < 20; x++) {
+            if (x % 2 == 1)
+                continue;
+            output = output + 'x=' + x + ' ';
+        }
+        document.getElementById("myContinue").innerHTML = output;
+
+    }
+
+    stop: {
+        for (var row = 1; row <= 10; ++row) {
+            for (var column = 1; column <= 6; ++column) {
+                if (row == 5)
+                    break stop;
+                document.write(" * ");
+            }
+            document.write("<p>");
+        }
+        document.write("这行无法显示");
+    }
+    document.write("结束script语句");
+
+
+    for (var x = 0; x < 10; x++) {
+        document.write(x, '<br/>');
+        if (x == 5) {
+            break;
+        }
+    }
+
+    var a = 1;
+    labell: for (var i = 1; i <= 9; i++) {
+        document.write("<br/>");
+        for (var j = 1; j <= 9; j++) {
+            if (j > i) {
+	            continue labell;
+
+            }
+            document.write(i + "x" + j + '=' + i * j + "&nbsp; ");
+
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>

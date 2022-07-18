@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>条件判断语句</title>
+</head>
+<body>
+
+<p>如果时间早于20:00，会获得问候"Good day".</p>
+<button onclick="myFunction()">获取问候</button>
+<p id="demo"></p><br/>
+
+<button onclick="nowTime()">获取现在时间</button>
+<p id="nowTime"></p><br/>
+
+<button onclick="myFunctionTwo()">获取问候two</button>
+<p id="demoTwo"></p><br/>
+
+<button onclick="myDate()">获取星期信息</button>
+<p id="myDate"></p>
+
+<script>
+    function myFunction() {
+        var x = "";
+        var time = new Date().getHours();
+        if (time < 20) {
+            // 如果time小于20
+            x = "Good day";
+        }
+        document.getElementById("demo").innerHTML = x;
+    }
+
+    function nowTime() {
+        document.getElementById("nowTime").innerHTML = "I Don't Know, also (-_-)?";
+    }
+
+    function myFunctionTwo() {
+        var x = "";
+        var time = new Date().getHours();
+        if (time < 20) {
+            x = "Good day";
+        } else {
+            x = "Good evening";
+        }
+        document.getElementById("demoTwo").innerHTML = x;
+    }
+
+    var time = new Date().getHours();
+    if (time < 10) {
+        document.write('<b>早上好!</b>');
+    } else if (time >= 10 && time < 16) {
+        document.write('<b>今天好</b>');
+    } else {
+        document.write('<b>晚上好</b>');
+    }
+    document.write("<br />");
+
+    var x = 56;
+
+    if (x <= 1) {
+        document.write('x <= 1 ');
+    } else if (x > 1 && x <= 50) {
+        document.write('1 < x <= 50');
+    } else if (x > 50 && x <= 100) {
+        document.write('50 < x <= 100');
+    } else {
+        document.write('x > 100');
+    }
+    document.write("<br />");
+
+    var x = 25, y = 25;
+    document.write(x,"<br />");
+    document.write(y,"<br />");
+
+    if(x < 10){
+        if(y == 1)
+            document.write('x<10 & y == 1', '<br/>');
+        else
+            document.write('x < 10 and y != 1', '<br/>');
+    } else if (x > 10) {
+        if(y == 1)
+            document.write('x > 10 and y == 1', '<br/>');
+        else
+            document.write('x > 10 and y != 1', '<br/>');
+    }
+    else
+        document.write('x == 10', '<br/>');
+
+    function myDate() {
+        var x;
+        var d = new Date().getDay();
+        switch (d){
+            case 0:
+                x = '今天是星期日';
+                break;
+	        case 1:
+	            x = '今天是星期一';
+	            break;
+	        case 2:
+	            x = '今天是星期二';
+	            break;
+	        case 3:
+	            x = '今天是星期三';
+	            break;
+	        case 4:
+	            x = '今天是星期四';
+	            break;
+	        case 5:
+	            x = '今天是星期五';
+	            break;
+	        case 6:
+	            x = '今天是星期六';
+	            break;
+        }
+        document.getElementById("myDate").innerHTML = x;
+    }
+
+
+</script>
+
+</body>
+</html>

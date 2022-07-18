@@ -1,0 +1,4 @@
+position: static  // 静态定位 position默认值
+position: absolute  // 绝对定位 绝对与父元素
+position: relative  // 相对定位 相对于其自身原始位置
+position: fixed  // 固定定位 固定于浏览器窗口

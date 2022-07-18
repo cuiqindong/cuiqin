@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>js</title>
+</head>
+<body>
+<script>
+    var person;
+    document.write(person + "<br/>");
+    var car = null;
+    document.write(car + '<br />');
+
+    document.write(Boolean(""), "<br/>");
+    document.write(Boolean(0), "<br/>");
+    document.write(Boolean(null), "<br/>");
+    document.write(Boolean(undefined), "<br/>");
+
+    var str = '字符串';
+    document.write(typeof str, "<br/>");
+    document.write(str, "<br/>");
+    document.write("<br/>");
+
+    var str = new String("字符串");
+    document.write(typeof str, "<br/>");
+    document.write(str, "<br/><br/>");
+
+    document.write('\u03c0 \n');
+    document.write('Hello\nworld\n');
+
+    document.write('\t\\ \n');
+
+    var msg = 'hello';
+    msg = msg + ', world';
+    document.write(msg, '\n');
+
+    document.write("<br />");
+
+    var str = "I lov JavaScript !";
+    document.write("I love JavaScript!的字符个数:" + str.length + "<br /> ");
+
+    var s = "Hello, world";
+    last_char = s.charAt(s.length - 1);
+    document.write(last_char);
+    document.write("<br />");
+
+    var a = 'Hello World!';
+    document.write(a.toLocaleLowerCase());
+    document.write("<br />");
+
+    document.write(a.toLowerCase());
+    document.write("<br />");
+
+    document.write(a.toLocaleUpperCase());
+    document.write("<br />");
+
+    document.write(a.toUpperCase());
+    document.write("<br />");
+
+    var x1 = 36.00;
+    var x2 = 36;
+    var x3 = 123e5;
+    var x4 = 123e-5;
+
+    document.write(x1);
+    document.write("<br />");
+
+    document.write(x2, '<br/>');
+
+    document.write(x3, '<br />');
+
+    document.write(x4, '<br />');
+
+    document.write("<br />");
+
+    var person = new Object();
+    person.firstname = 'Bill';
+    person.lastname = 'Gates';
+	person.age = 56;
+	person.eyecolor = 'blue';
+
+	document.write(person.firstname, ' is ', person.age, ' yeas old');
+
+</script>
+</body>
+</html>
